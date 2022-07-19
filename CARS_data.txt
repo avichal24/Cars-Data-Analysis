@@ -1,0 +1,31 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+cars = pd.read_csv("/content/Cars Data.csv")
+
+Find the Rows and colummn for the DATAFRAME
+
+cars.shape
+
+Find the null Values of the Daraframe
+
+cars.isnull().sum()
+
+
+from sklearn.impute import SimpleImputer
+imputer = SimpleImputer(missing_values = np.nan , strategy ='mean')
+cars['Cylinders'] = imputer.fit_transform(cars['Cylinders'].values.reshape(-1,1))
+
+cars.isnull().sum()
+
+cars['Make'].value_counts()
+
+y = cars['Origin'].isin(['Asia', 'Europe'])
+# cars[y]
+
+cars[~(cars['Weight'] > 4000)]
+
+cars['MPG_City'] = cars['MPG_City'].apply(lambda x:x+3)
+cars
