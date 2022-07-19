@@ -23,6 +23,9 @@ common Data Preprocessing tool of Machine
 Learning library that is Simple Imputer, and 
 replaced the missing values with the 'Most Frequent Values'
 
+![SI](https://user-images.githubusercontent.com/109500969/179671707-703f2183-92a1-4103-b0cf-3927173d146d.png)
+
+
 ### 2. Classifying
 After that the 'Origin' column was sorted 
 according to the required countries, where we 
@@ -46,7 +49,9 @@ unwanted are removed before graphical representation,
 seaborn library is used for determining the
 frequency distribution barplot.
 
+### Example:
 
+![Count](https://user-images.githubusercontent.com/109500969/179671704-813f599c-3608-4cd2-9528-d0e2f4bd2b84.png)
 
 
 ## Deployment
